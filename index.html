@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authenticator</title>
+    <h1 div class = "response"></h1>
+</head>
+<body>
+    
+</body>
+<script>
+    const authenticatorCheck = function(userId,password){
+        if (userId == "admin" && password == "secret"){
+            console.log("Welcome admin!");
+            responseArea.innerHTML = "Welcome admin!";
+        }    
+        else{
+            console.log("BAD LOGIN CREDINTIALS");
+            responseArea.innerHTML = "BAD LOGIN CREDINTIALS";
+        } 
+        }
+    responseArea = document.querySelector(".response");
+    let user = prompt("Enter Username: ");
+    let password = prompt("Enter Password: ");
+    authenticatorCheck(user,password)
+
+</script>
+</html>
